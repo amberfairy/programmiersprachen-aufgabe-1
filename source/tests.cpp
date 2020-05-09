@@ -21,6 +21,8 @@ int gcd(int a, int b) {
     }
 }
 
+
+
 TEST_CASE("describe_gcd", "[gcd]") {
     REQUIRE(gcd(2, 4) == 2);
     REQUIRE(gcd(9, 6) == 3);
@@ -32,5 +34,5 @@ TEST_CASE("describe_gcd", "[gcd]") {
 
 int main(int argc, char* argv[])
 {
-  return Catch::Session().run(argc, argv);
+    return Catch::Session().run(argc, argv);
 }

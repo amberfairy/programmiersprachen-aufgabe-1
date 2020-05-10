@@ -19,6 +19,7 @@ int checksum(int zahl) {
 
 TEST_CASE("describe_checksum", "[checksum]") {
     REQUIRE(checksum(143) == 8);
+    REQUIRE(checksum(121041) == 9);
     REQUIRE(checksum(541649328) == 42);
     REQUIRE(checksum(-24) == 0);
     REQUIRE(checksum(0) == 0);

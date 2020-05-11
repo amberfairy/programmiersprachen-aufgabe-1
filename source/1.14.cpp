@@ -15,12 +15,16 @@ bool is_prime(int zahl) {
 			return true;
 		}
 	}
+	else if(zahl == 1){
+		return false;
+	}
 	else {
 		return true;
 	}
 }
 
 TEST_CASE("describe_is_prime", "[is_prime]") {
+	REQUIRE(is_prime(1) == false);
 	REQUIRE(is_prime(3) == true);
 	REQUIRE(is_prime(13) == true);
 	REQUIRE(is_prime(42) == false);
